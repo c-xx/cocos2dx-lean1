@@ -68,6 +68,7 @@ bool HelloWorld::init()
 
     // add "HelloWorld" splash screen"
     auto sprite = Sprite::create("background.jpg");
+	//auto sprite = Sprite::create("background.jpg", Rect(0, 0, 100, 100));
 
     // position the sprite on the center of the screen
     sprite->setPosition(Vec2(visibleSize.width/2 + origin.x, visibleSize.height/2 + origin.y));
