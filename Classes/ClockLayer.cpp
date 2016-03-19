@@ -2,11 +2,9 @@
 
 
 
-ClockLayer::ClockLayer()
+bool ClockLayer::init()
 {
+	return true;
 }
 
 
-ClockLayer::~ClockLayer()
-{
-}

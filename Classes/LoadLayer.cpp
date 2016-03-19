@@ -1,12 +1,6 @@
 #include "LoadLayer.h"
 
+bool LoadLayer::init() {
 
-
-LoadLayer::LoadLayer()
-{
-}
-
-
-LoadLayer::~LoadLayer()
-{
+	return true;
 }

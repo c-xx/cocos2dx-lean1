@@ -1,6 +1,8 @@
 #include "AppDelegate.h"
 //#include "HelloWorldScene.h"
-#include "HelloWorldLayer.h"
+//#include "HelloWorldLayer.h"
+
+#include "SceneManager.h"
 
 USING_NS_CC;
 
@@ -44,11 +46,20 @@ bool AppDelegate::applicationDidFinishLaunching() {
 
     // create a scene. it's an autorelease object
     //auto scene = HelloWorld::createScene();
-	auto scene = Scene::create();
-	HelloWorldLayer *layer = HelloWorldLayer::create();
-	scene->addChild(layer);
+	//auto scene = Scene::create();
+	//HelloWorldLayer *layer = HelloWorldLayer::create();
+	//scene->addChild(layer);
+
+	SceneManager * manger = new SceneManager();
+
+	manger->createLoadScene();
+
+
+
+
+	director->runWithScene(manger->loadScene);
     // run
-    director->runWithScene(scene);
+    //director->runWithScene(scene);
 	CCLOG("applicationDidFinishLaunching");
     return true;
 }

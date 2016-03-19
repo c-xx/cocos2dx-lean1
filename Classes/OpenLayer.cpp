@@ -2,11 +2,10 @@
 
 
 
-OpenLayer::OpenLayer()
+bool OpenLayer::init()
 {
+	return true;
 }
 
 
-OpenLayer::~OpenLayer()
-{
-}
+
