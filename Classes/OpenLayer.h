@@ -9,6 +9,7 @@ class OpenLayer:public Layer
 public:
 	CREATE_FUNC(OpenLayer);
 	virtual bool init();
+	void menuCallBack(Ref * pSender);
 
 	SceneManager * tsm;
 };
